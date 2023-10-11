@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Loop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="Eco Loop logo.png">
+
+        <nav class="menu-bar">
+            <ul>
+                <li class="active"><a href="#">
+                        Home</a>
+                </li>
+                <li><a href="">About</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">Mission</a></li>
+                            <li><a href="">Vision</a></li>
+                            <li><a href="">Our Services</a></li>
+                            <li><a href="">Our Centers</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class=""><a href="">Features</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">For Home</a></li>
+                            <li><a href="">For Business</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="">Products</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href="">Vision</a></li>
+                            <li><a href="">Team</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1"
+                        src="https://img.freepik.com/free-psd/waste-management-banner-post-design-template_23-2149111703.jpg"
+                        alt="slide1">
+                    <img id="slide-2"
+                        src="https://img.freepik.com/free-psd/waste-management-banner-post-design-template_23-2149109678.jpg"
+                        alt="slide2">
+                    <img id="slide-3"
+                        src="https://as2.ftcdn.net/v2/jpg/03/14/96/15/1000_F_314961564_cvQ8Puf1TDUGyxxtUMKuccTOznNnHUDj.jpg"
+                        alt="slide3">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <p>"From scraps to masterpieces, best out of waste -</p>
+            <p> where creativity meets sustainability."</p>
+        </section>
+        <section class="swiper mySwiper" id="swiper">
+            <div class="swiper-wrapper">
+                <div class=" card swiper-slide">
+                    <div class="card_img">
+                        <img alt="card image"
+                            src="https://artisanscentre.com/cdn/shop/collections/Rajiben_Colelction_1550_1080_copy_877a0b7e-5472-4ff3-a659-a60754e5abe3_928x928.jpg?v=1656403676">
+                    </div>
+                    <div class="card_content">
+                        <span class="card_title">Bags</span>
+                        <span class="card_name">Rajiben’s Recycled Plastic Accessories</span>
+                        <p class="card_text">Rajiben Vankar is an artisan-entrepreneur who weaves plastic waste into
+                            irresistible bags and accessories. 70 single-use plastic bags are woven into every meter of
+                            hand-woven sheets.</p>
+                        <button class="card_btn" >View More</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+    </main>
+
+</body>
+
+
+</html>
